@@ -40,4 +40,4 @@ function calculateIncome(income: number): number
    return income*0.2
 }
 
-console.log(calculateIncome(10000))
+console.log(calculateIncome(10_000)) //typescript allows _ in numbers to make it more readable
