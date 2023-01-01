@@ -106,3 +106,12 @@ let textBox: UIwidget = {
 }
 
 textBox.drag()
+
+//literal types
+type TshirtSize = "small" | "medium" | "large"
+let selectedTshirtSize: TshirtSize = "medium"
+
+type Quantity = 1 | 2 | 3 | 4 | 5
+let selectedQuantity: Quantity = 5
+
+console.log(selectedQuantity)

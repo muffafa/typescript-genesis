@@ -47,4 +47,7 @@ let textBox = {
     }
 };
 textBox.drag();
+let selectedTshirtSize = "medium";
+let selectedQuantity = 5;
+console.log(selectedQuantity);
 //# sourceMappingURL=index.js.map
