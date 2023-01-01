@@ -21,13 +21,16 @@
 // greetings = greetings.toUpperCase()
 // console.log(greetings)
 
+//tuple
 let user: [string, number] = ["mustafa", 123456]
 console.log(user[0].toUpperCase())
 
+//enums
 enum Size {small = 1, medium, large}
 let selectedSize: Size = Size.medium
 console.log(selectedSize)
 
+//functions
 function calculateIncome(income: number, taxyear = 2022): number
 {
     let tax: number = 0
@@ -42,3 +45,17 @@ function calculateIncome(income: number, taxyear = 2022): number
 }
 
 console.log(calculateIncome(10_000)) //typescript allows _ in numbers to make it more readable
+
+//objects
+let student:{
+    name: string,
+    age: number,
+    class?: string
+} = {
+    name: "mustafa",
+    age: 20}
+
+console.log(student.name)
+console.log(student.class)
+
+student.class = "12"
