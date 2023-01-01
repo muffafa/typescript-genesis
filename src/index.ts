@@ -28,12 +28,12 @@ enum Size {small = 1, medium, large}
 let selectedSize: Size = Size.medium
 console.log(selectedSize)
 
-function calculateIncome(income: number, taxyear?: number): number
+function calculateIncome(income: number, taxyear = 2022): number
 {
     let tax: number = 0
     console.log(tax);
 
-   if((taxyear || 2022) < 2022)
+   if(taxyear < 2022)
    {
        return income*0.1
    }
