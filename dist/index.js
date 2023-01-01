@@ -25,4 +25,5 @@ let student = {
 console.log(student.name);
 console.log(student.class);
 student.class = "12";
+console.log(student.class);
 //# sourceMappingURL=index.js.map
