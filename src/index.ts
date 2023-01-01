@@ -35,5 +35,5 @@ function calculateIncome(income: number): number
        return income*0.1
    }
    //undefined
-   
+   return income*0.2
 }
