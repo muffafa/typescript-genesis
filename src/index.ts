@@ -44,6 +44,7 @@ function calculateIncome(income: number, taxyear = 2022): number {
 
 console.log(calculateIncome(10_000)) //typescript allows _ in numbers to make it more readable
 
+//type aliases
 type Student = {
     readonly id: number,
     name: string,
@@ -72,13 +73,36 @@ console.log(student.class)
 
 student.graduate(new Date())
 
+//union types
 function kilogramToPound(weight: number | string): number {
     //narrowing
-    if (typeof weight === "string") 
+    if (typeof weight === "string")
         weight = parseInt(weight)
-        
+
     return weight * 2.20462
 }
 
 console.log(kilogramToPound(10))
 console.log(kilogramToPound("10"))
+
+//intersection types
+type Dragable = {
+    drag: () => void
+}
+
+type Resizable = {
+    resize: () => void
+}
+
+type UIwidget = Dragable & Resizable
+
+let textBox: UIwidget = {
+    drag: () => {
+        console.log("dragging")
+    },
+    resize: () => {
+        console.log("resizing")
+    }
+}
+
+textBox.drag()

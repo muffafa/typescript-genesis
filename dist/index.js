@@ -38,4 +38,13 @@ function kilogramToPound(weight) {
 }
 console.log(kilogramToPound(10));
 console.log(kilogramToPound("10"));
+let textBox = {
+    drag: () => {
+        console.log("dragging");
+    },
+    resize: () => {
+        console.log("resizing");
+    }
+};
+textBox.drag();
 //# sourceMappingURL=index.js.map
