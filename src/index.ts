@@ -28,8 +28,12 @@ enum Size {small = 1, medium, large}
 let selectedSize: Size = Size.medium
 console.log(selectedSize)
 
-function add(a: number, b: number): number {
-    return a + b
+function calculateIncome(income: number): number
+{
+   if(income<10000)
+   {
+       return income*0.1
+   }
+   //undefined
+   
 }
-
-console.log(add(1, 2))
