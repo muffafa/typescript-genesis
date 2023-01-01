@@ -24,3 +24,12 @@
 let user: [string, number] = ["mustafa", 123456]
 console.log(user[0].toUpperCase())
 
+enum Size {small = 1, medium, large}
+let selectedSize: Size = Size.medium
+console.log(selectedSize)
+
+function add(a: number, b: number): number {
+    return a + b
+}
+
+console.log(add(1, 2))
