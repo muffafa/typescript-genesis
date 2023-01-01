@@ -118,7 +118,7 @@ console.log(selectedQuantity)
 
 //null check
 type Customer = {
-    brithday: Date
+    brithday?: Date
 }
 
 function getCustomer(id: number): Customer | null | undefined {
@@ -131,4 +131,4 @@ let customer = getCustomer(0)
 console.log(customer?.brithday)
 
 customer = getCustomer(1)
-console.log(customer?.brithday)
+console.log(customer?.brithday?.getFullYear()) // if there is customer and customer has birthday then get year

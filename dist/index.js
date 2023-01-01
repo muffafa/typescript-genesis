@@ -1,4 +1,5 @@
 "use strict";
+var _a;
 let user = ["mustafa", 123456];
 console.log(user[0].toUpperCase());
 var Size;
@@ -56,5 +57,5 @@ function getCustomer(id) {
 let customer = getCustomer(0);
 console.log(customer === null || customer === void 0 ? void 0 : customer.brithday);
 customer = getCustomer(1);
-console.log(customer === null || customer === void 0 ? void 0 : customer.brithday);
+console.log((_a = customer === null || customer === void 0 ? void 0 : customer.brithday) === null || _a === void 0 ? void 0 : _a.getFullYear());
 //# sourceMappingURL=index.js.map
