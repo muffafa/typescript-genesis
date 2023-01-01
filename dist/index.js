@@ -31,4 +31,11 @@ console.log(student.class);
 student.class = "12";
 console.log(student.class);
 student.graduate(new Date());
+function kilogramToPound(weight) {
+    if (typeof weight === "string")
+        weight = parseInt(weight);
+    return weight * 2.20462;
+}
+console.log(kilogramToPound(10));
+console.log(kilogramToPound("10"));
 //# sourceMappingURL=index.js.map

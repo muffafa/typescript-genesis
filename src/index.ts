@@ -71,3 +71,14 @@ console.log(student.class)
 //student.id = 2 //readonly error
 
 student.graduate(new Date())
+
+function kilogramToPound(weight: number | string): number {
+    //narrowing
+    if (typeof weight === "string") 
+        weight = parseInt(weight)
+        
+    return weight * 2.20462
+}
+
+console.log(kilogramToPound(10))
+console.log(kilogramToPound("10"))
