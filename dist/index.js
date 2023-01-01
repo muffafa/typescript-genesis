@@ -9,10 +9,10 @@ var Size;
 })(Size || (Size = {}));
 let selectedSize = Size.medium;
 console.log(selectedSize);
-function calculateIncome(income) {
+function calculateIncome(income, taxyear) {
     let tax = 0;
     console.log(tax);
-    if (income < 10000) {
+    if ((taxyear || 2022) < 2022) {
         return income * 0.1;
     }
     return income * 0.2;
