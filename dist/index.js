@@ -9,8 +9,10 @@ var Size;
 })(Size || (Size = {}));
 let selectedSize = Size.medium;
 console.log(selectedSize);
-function add(a, b) {
-    return a + b;
+function calculateIncome(income) {
+    if (income < 10000) {
+        return income * 0.1;
+    }
+    return income * 0.2;
 }
-console.log(add(1, 2));
 //# sourceMappingURL=index.js.map
