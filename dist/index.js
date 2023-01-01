@@ -58,4 +58,8 @@ let customer = getCustomer(0);
 console.log(customer === null || customer === void 0 ? void 0 : customer.brithday);
 customer = getCustomer(1);
 console.log((_a = customer === null || customer === void 0 ? void 0 : customer.brithday) === null || _a === void 0 ? void 0 : _a.getFullYear());
+let customers = [customer];
+console.log(customers === null || customers === void 0 ? void 0 : customers[1]);
+let log = null;
+log === null || log === void 0 ? void 0 : log("hello world");
 //# sourceMappingURL=index.js.map

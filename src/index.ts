@@ -132,3 +132,14 @@ console.log(customer?.brithday)
 
 customer = getCustomer(1)
 console.log(customer?.brithday?.getFullYear()) // if there is customer and customer has birthday then get year
+
+//optinal element access operator ?.
+let customers = [customer]
+//if (customers !== null && customers !== undefined)
+console.log(customers?.[1])
+
+//optinal call operator ?.
+//let log: any = (message: string) => { console.log(message) }
+let log: any = null;
+//log("hello world") //program will crash
+log?.("hello world") //program will not crash
