@@ -10,9 +10,12 @@ var Size;
 let selectedSize = Size.medium;
 console.log(selectedSize);
 function calculateIncome(income) {
+    let tax = 0;
+    console.log(tax);
     if (income < 10000) {
         return income * 0.1;
     }
     return income * 0.2;
 }
+console.log(calculateIncome(10000));
 //# sourceMappingURL=index.js.map

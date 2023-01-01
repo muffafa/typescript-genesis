@@ -30,6 +30,8 @@ console.log(selectedSize)
 
 function calculateIncome(income: number): number
 {
+    let tax: number = 0
+    console.log(tax);
    if(income<10000)
    {
        return income*0.1
@@ -37,3 +39,5 @@ function calculateIncome(income: number): number
    //undefined
    return income*0.2
 }
+
+console.log(calculateIncome(10000))
