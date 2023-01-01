@@ -115,3 +115,20 @@ type Quantity = 1 | 2 | 3 | 4 | 5
 let selectedQuantity: Quantity = 5
 
 console.log(selectedQuantity)
+
+//null check
+type Customer = {
+    brithday: Date
+}
+
+function getCustomer(id: number): Customer | null | undefined {
+   return id === 0 ? null : { brithday: new Date() }
+}
+
+let customer = getCustomer(0)
+//if (customer !== null && customer !== undefined)
+//optinal property access operator ?. optinal chaining
+console.log(customer?.brithday)
+
+customer = getCustomer(1)
+console.log(customer?.brithday)

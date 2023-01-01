@@ -50,4 +50,11 @@ textBox.drag();
 let selectedTshirtSize = "medium";
 let selectedQuantity = 5;
 console.log(selectedQuantity);
+function getCustomer(id) {
+    return id === 0 ? null : { brithday: new Date() };
+}
+let customer = getCustomer(0);
+console.log(customer === null || customer === void 0 ? void 0 : customer.brithday);
+customer = getCustomer(1);
+console.log(customer === null || customer === void 0 ? void 0 : customer.brithday);
 //# sourceMappingURL=index.js.map
