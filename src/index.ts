@@ -26,34 +26,34 @@ let user: [string, number] = ["mustafa", 123456]
 console.log(user[0].toUpperCase())
 
 //enums
-enum Size {small = 1, medium, large}
+enum Size { small = 1, medium, large }
 let selectedSize: Size = Size.medium
 console.log(selectedSize)
 
 //functions
-function calculateIncome(income: number, taxyear = 2022): number
-{
+function calculateIncome(income: number, taxyear = 2022): number {
     let tax: number = 0
     console.log(tax);
 
-   if(taxyear < 2022)
-   {
-       return income*0.1
-   }
-   //undefined
-   return income*0.2
+    if (taxyear < 2022) {
+        return income * 0.1
+    }
+    //undefined
+    return income * 0.2
 }
 
 console.log(calculateIncome(10_000)) //typescript allows _ in numbers to make it more readable
 
-//objects
-let student:{
-    readonly id : number,
+type Student = {
+    readonly id: number,
     name: string,
     age: number,
     class?: string
-    graduate : (date : Date) => void
-} = {
+    graduate: (date: Date) => void
+}
+
+//objects
+let student: Student = {
     id: 1,
     name: "mustafa",
     age: 20,
