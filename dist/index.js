@@ -19,11 +19,16 @@ function calculateIncome(income, taxyear = 2022) {
 }
 console.log(calculateIncome(10000));
 let student = {
+    id: 1,
     name: "mustafa",
-    age: 20
+    age: 20,
+    graduate: (date) => {
+        console.log(`Graduated on ${date}`);
+    }
 };
 console.log(student.name);
 console.log(student.class);
 student.class = "12";
 console.log(student.class);
+student.graduate(new Date());
 //# sourceMappingURL=index.js.map

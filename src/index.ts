@@ -48,15 +48,26 @@ console.log(calculateIncome(10_000)) //typescript allows _ in numbers to make it
 
 //objects
 let student:{
+    readonly id : number,
     name: string,
     age: number,
     class?: string
+    graduate : (date : Date) => void
 } = {
+    id: 1,
     name: "mustafa",
-    age: 20}
+    age: 20,
+    graduate: (date: Date) => {
+        console.log(`Graduated on ${date}`)
+    }
+}
 
 console.log(student.name)
 console.log(student.class)
 
 student.class = "12"
 console.log(student.class)
+
+//student.id = 2 //readonly error
+
+student.graduate(new Date())
