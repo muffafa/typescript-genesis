@@ -223,6 +223,7 @@ interface User3 {
     githubToken: string
 }
 
+//inheritance for interface
 interface Admin3 extends User3 {
     role: "admin" | "mod"
 }
