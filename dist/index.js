@@ -62,4 +62,9 @@ let customers = [customer];
 console.log(customers === null || customers === void 0 ? void 0 : customers[1]);
 let log = null;
 log === null || log === void 0 ? void 0 : log("hello world");
+const heroes = ["thor", "spiderman", "ironman", "captain america"];
+const arr = heroes.map((hero) => {
+    return `hero is ${hero}`;
+});
+arr.map((hero) => console.log(hero));
 //# sourceMappingURL=index.js.map

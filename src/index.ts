@@ -143,3 +143,18 @@ console.log(customers?.[1])
 let log: any = null;
 //log("hello world") //program will crash
 log?.("hello world") //program will not crash
+
+//arrow function example
+
+const heroes = ["thor", "spiderman", "ironman", "captain america"]
+//const heroes = [1,2,2] //error
+
+const arr = heroes.map((hero: string): string => { //it means you have to send stirng and return string
+    //return 1 //error
+    return `hero is ${hero}`
+})
+
+arr.map((hero: string) => console.log(hero));
+
+
+
