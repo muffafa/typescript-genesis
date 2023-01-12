@@ -164,3 +164,49 @@ const arrUnion: (number | string)[] = [1, "2", 3, "4", 5]
 const arrNumWStr: Array<number | string> = [1, "2", 3, "4", 5] // sane as above
 const arrJNumOrJStr: number[] | string[] = [1,2,3,4,5] 
 const arrJNumOrJStr2: number[] | string[] = ["1","2","3","4","5"]
+
+//good object union example
+
+type User = {
+    name: string
+    age: number
+}
+
+type Admin = {
+    name: string
+    age: number
+
+    role: string
+}
+
+type UserOrAdmin = User | Admin
+
+const userOrAdmin: UserOrAdmin = {
+    name: "mustafa",
+    age: 20,
+    role: "admin"
+}
+
+//good object intersection example
+
+type User2 = {
+    name: string
+    age: number
+}
+
+type Admin2 = {
+
+
+    role: string
+}
+
+type UserAndAdmin = User2 & Admin2
+
+const userAndAdmin: UserAndAdmin = {
+    name: "mustafa",
+    age: 20,
+    role: "admin"
+}
+
+
+
