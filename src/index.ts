@@ -208,5 +208,37 @@ const userAndAdmin: UserAndAdmin = {
     role: "admin"
 }
 
+//interface example
+
+interface User3 {
+    readonly dbId: number
+    name: string
+    age: number
+    email?: string
+    sayHello(): string
+    getCupon(cupponName: string, datex: number): number
+}
+
+interface User3 {
+    githubToken: string
+}
+
+interface Admin3 extends User3 {
+    role: "admin" | "mod"
+}
+
+const user3: Admin3 = {
+    dbId: 1,
+    githubToken: "123456",
+    role: "admin",
+    name: "mustafa",
+    age: 20,
+    sayHello: () => {
+        return "hello"
+    },
+    getCupon: (name: string, datex: number) => {
+        return 10
+    }
+}
 
 
