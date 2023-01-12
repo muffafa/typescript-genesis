@@ -161,6 +161,6 @@ arr.map((hero: string) => console.log(hero));
 const arrNum: number[] = [1, 2, 3, 4, 5]
 const arrStr: string[] = ["1", "2", "3", "4", "5"]
 const arrUnion: (number | string)[] = [1, "2", 3, "4", 5]
-const arrNumWStr: Array<number | string> = [1, "2", 3, "4", 5]
+const arrNumWStr: Array<number | string> = [1, "2", 3, "4", 5] // sane as above
 const arrJNumOrJStr: number[] | string[] = [1,2,3,4,5] 
 const arrJNumOrJStr2: number[] | string[] = ["1","2","3","4","5"]
